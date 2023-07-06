@@ -11,6 +11,7 @@ import streamlit as st
 import folium
 from PIL import Image
 from streamlit_folium import folium_static
+from datetime import datetime
 
 st.set_page_config(page_title='Visão Restaurantes', page_icon='pizza', layout='wide')
 
