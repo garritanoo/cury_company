@@ -153,9 +153,9 @@ st.markdown('---')
 st.sidebar.markdown('### Selecione a data limite')
 data_slider = st.sidebar.slider(
     'Até qual valor?',
-    value=pd.to_datetime(['2022-4-13', datetime(2022,4,13) ]),
-    min_value=pd.to_datetime(['2022-2-11', datetime(2022,2,11)]),
-    max_value=pd.to_datetime(['2022-4-6', datetime(2022, 4, 6)]),
+    value=datetime.date(2022, 4, 13),
+    min_value=datetime.date(2022, 2, 11),
+    max_value=datetime.date(2022, 4, 6),
     format='DD-MM-YYYY')
 
 traffic_options = st.sidebar.multiselect(
