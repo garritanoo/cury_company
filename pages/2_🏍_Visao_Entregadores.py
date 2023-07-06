@@ -10,6 +10,7 @@ import streamlit as st
 import folium
 from PIL import Image
 from streamlit_folium import folium_static
+from datetime import datetime
 
 st.set_page_config(page_title='Visão Entregadores', page_icon='motorcycle', layout='wide')
 
@@ -155,7 +156,7 @@ data_slider = st.sidebar.slider(
     value=pd.datetime(2022, 4, 13),
     min_value=pd.datetime(2022, 2, 11),
     max_value=pd.datetime(2022, 4, 6),
-    format='YYYY-MM-DD')
+    format='DD-MM-YYYY')
 
 traffic_options = st.sidebar.multiselect(
     'Quais as condições do transito?',
